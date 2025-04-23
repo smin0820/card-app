@@ -393,13 +393,13 @@ export const card_list = [
 
 export const adBanners = [
   {
-    title: 'Easy all 카드',
+    title: 'Easy link 티타늄카드',
     description: '기간이 얼마 남지 않았어요',
-    link: '/card/0FCQ0P3fHwIuHfEkFb98',
+    link: '/card/2gZ7BLoNRA65qkWw4lZQ',
   },
   {
-    title: '굿데이올림카드',
+    title: 'Easy all 티타늄카드',
     description: '신규회원 연회비 지원해드려요',
-    link: '/card/1A1vyiHfHyZagksPfvsS',
+    link: '/card/AP8AofSpoRpaHVPBPRXn',
   },
 ]
