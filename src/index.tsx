@@ -7,14 +7,21 @@ import { Global } from '@emotion/react'
 import globalStyles from './styles/globalStyles'
 
 import { AlertContextPrvider } from '@contexts/AlertContext'
+import { QueryClient, QueryClientProvider } from 'react-query'
+
+const client = new QueryClient({
+  defaultOptions: {},
+})
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <React.StrictMode>
     <Global styles={globalStyles} />
-    <AlertContextPrvider>
-      <App />
-    </AlertContextPrvider>
+    <QueryClientProvider client={client}>
+      <AlertContextPrvider>
+        <App />
+      </AlertContextPrvider>
+    </QueryClientProvider>
   </React.StrictMode>,
 )
 
