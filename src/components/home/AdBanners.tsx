@@ -13,14 +13,13 @@ import 'swiper/css'
 
 export default function AdBanners() {
   const { data } = useQuery(['adBanners'], () => getadBanners())
-  console.log(data)
 
   return (
     <Container>
       <Swiper spaceBetween={8}>
         {data?.map((banner) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={banner.id}>
               <Link to={banner.link}>
                 <Flex direction="column" css={bannerContainerStyles}>
                   <Text bold={true}>{banner.title}</Text>
