@@ -1,19 +1,50 @@
 import { getCards } from '@/remote/card'
-import React from 'react'
-import { useQuery } from 'react-query'
+import { flatten } from 'lodash'
+import React, { useCallback } from 'react'
+import InfiniteScroll from 'react-infinite-scroll-component'
+import { useInfiniteQuery } from 'react-query'
 import ListRow from '../shared/ListRow'
 
 export default function CardList() {
-  const { data } = useQuery(['cards'], () => getCards())
+  const {
+    data,
+    hasNextPage = false,
+    fetchNextPage,
+    isFetching,
+  } = useInfiniteQuery(
+    ['cards'],
+    ({ pageParam }) => {
+      return getCards(pageParam)
+    },
+    {
+      getNextPageParam: (snapshot) => {
+        return snapshot.lastVisible
+      },
+    },
+  )
+
+  const loadMore = useCallback(() => {
+    if (hasNextPage === false || isFetching) {
+      return
+    }
+    fetchNextPage()
+  }, [fetchNextPage, hasNextPage, isFetching])
 
   if (data === null) {
     return null
   }
 
+  const cards = flatten(data?.pages.map(({ items }) => items))
+
   return (
     <div>
-      <ul>
-        {data?.map((card, index) => {
+      <InfiniteScroll
+        dataLength={cards.length}
+        hasMore={hasNextPage}
+        loader={<></>}
+        next={loadMore}
+      >
+        {cards?.map((card, index) => {
           return (
             <ListRow
               key={card.id}
@@ -25,7 +56,7 @@ export default function CardList() {
             />
           )
         })}
-      </ul>
+      </InfiniteScroll>
     </div>
   )
 }
