@@ -5260,6 +5260,7 @@ __metadata:
     eslint-plugin-prettier: "npm:^5.2.5"
     eslint-plugin-react: "npm:^7.37.4"
     firebase: "npm:^11.6.0"
+    framer-motion: "npm:^12.9.2"
     lodash: "npm:^4.17.21"
     prettier: "npm:^3.5.3"
     react: "npm:^19.1.0"
@@ -7667,6 +7668,28 @@ __metadata:
   version: 4.3.7
   resolution: "fraction.js@npm:4.3.7"
   checksum: 10c0/df291391beea9ab4c263487ffd9d17fed162dbb736982dee1379b2a8cc94e4e24e46ed508c6d278aded9080ba51872f1bc5f3a5fd8d7c74e5f105b508ac28711
+  languageName: node
+  linkType: hard
+
+"framer-motion@npm:^12.9.2":
+  version: 12.9.2
+  resolution: "framer-motion@npm:12.9.2"
+  dependencies:
+    motion-dom: "npm:^12.9.1"
+    motion-utils: "npm:^12.8.3"
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    "@emotion/is-prop-valid": "*"
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+  peerDependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c0/467a486675b04c612168151f5f8fc66d9f8d85016cff025351b33da8889521e98185e08e43f9ae050f982c810ca9fa22089839afff22ea5d0c602610d8c6f020
   languageName: node
   linkType: hard
 
@@ -10335,6 +10358,22 @@ __metadata:
   bin:
     mkdirp: bin/cmd.js
   checksum: 10c0/e2e2be789218807b58abced04e7b49851d9e46e88a2f9539242cc8a92c9b5c3a0b9bab360bd3014e02a140fc4fbc58e31176c408b493f8a2a6f4986bd7527b01
+  languageName: node
+  linkType: hard
+
+"motion-dom@npm:^12.9.1":
+  version: 12.9.1
+  resolution: "motion-dom@npm:12.9.1"
+  dependencies:
+    motion-utils: "npm:^12.8.3"
+  checksum: 10c0/008875fbbfdff639f03b1e7a07c17327d590d0d270de270c4ad65e642bfaa4feb5caeadada235249f88412ce15c0f51a96218b9f3293aaf98bb4d5309c124c0b
+  languageName: node
+  linkType: hard
+
+"motion-utils@npm:^12.8.3":
+  version: 12.8.3
+  resolution: "motion-utils@npm:12.8.3"
+  checksum: 10c0/94eb9e1692ccf9f13ad98ba6fabc39159da9885ae06c7a5afcbaf96fdbbd55f6093b922b74bbf174783152dbf7126f439851d8e5a787459a7d634510795f8ab2
   languageName: node
   linkType: hard
 
@@ -14062,7 +14101,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.8.1":
+"tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.4.0, tslib@npm:^2.8.1":
   version: 2.8.1
   resolution: "tslib@npm:2.8.1"
   checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62
