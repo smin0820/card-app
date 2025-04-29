@@ -39,7 +39,7 @@ export default function CardPage() {
               }}
               transition={{
                 duration: 0.7,
-                ease: 'easeInOut',
+                ease: easeInOut,
                 delay: index * 0.1,
               }}
               animate={{
