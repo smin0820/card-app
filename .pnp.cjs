@@ -42,6 +42,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:19.0.12"],\
           ["@types/react-dom", "virtual:959a6f4d1e7f9d7c28ea0dc2a832f34fc4aaf7381fdbf5053a0f3f060b7409189f1b43fa830820bba280f2bb37ebb1f7121e62f66733496570163a3697d1b897#npm:19.0.4"],\
           ["@types/testing-library__jest-dom", "npm:6.0.0"],\
+          ["@types/validator", "npm:13.15.0"],\
           ["card-app", "workspace:."],\
           ["craco-alias", "npm:3.0.1"],\
           ["eslint", "npm:8.57.0"],\
@@ -61,6 +62,7 @@ const RAW_RUNTIME_STATE =
           ["react-scripts", "virtual:959a6f4d1e7f9d7c28ea0dc2a832f34fc4aaf7381fdbf5053a0f3f060b7409189f1b43fa830820bba280f2bb37ebb1f7121e62f66733496570163a3697d1b897#npm:5.0.1"],\
           ["swiper", "npm:9.4.1"],\
           ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"],\
+          ["validator", "npm:13.15.0"],\
           ["web-vitals", "npm:2.1.4"]\
         ],\
         "linkType": "SOFT"\
@@ -6609,6 +6611,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@types/validator", [\
+      ["npm:13.15.0", {\
+        "packageLocation": "../../Users/min/AppData/Local/Yarn/Berry/cache/@types-validator-npm-13.15.0-4f9b0b87d2-10c0.zip/node_modules/@types/validator/",\
+        "packageDependencies": [\
+          ["@types/validator", "npm:13.15.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@types/ws", [\
       ["npm:8.18.0", {\
         "packageLocation": "../../Users/min/AppData/Local/Yarn/Berry/cache/@types-ws-npm-8.18.0-feb86cd561-10c0.zip/node_modules/@types/ws/",\
@@ -8392,6 +8403,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:19.0.12"],\
           ["@types/react-dom", "virtual:959a6f4d1e7f9d7c28ea0dc2a832f34fc4aaf7381fdbf5053a0f3f060b7409189f1b43fa830820bba280f2bb37ebb1f7121e62f66733496570163a3697d1b897#npm:19.0.4"],\
           ["@types/testing-library__jest-dom", "npm:6.0.0"],\
+          ["@types/validator", "npm:13.15.0"],\
           ["card-app", "workspace:."],\
           ["craco-alias", "npm:3.0.1"],\
           ["eslint", "npm:8.57.0"],\
@@ -8411,6 +8423,7 @@ const RAW_RUNTIME_STATE =
           ["react-scripts", "virtual:959a6f4d1e7f9d7c28ea0dc2a832f34fc4aaf7381fdbf5053a0f3f060b7409189f1b43fa830820bba280f2bb37ebb1f7121e62f66733496570163a3697d1b897#npm:5.0.1"],\
           ["swiper", "npm:9.4.1"],\
           ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"],\
+          ["validator", "npm:13.15.0"],\
           ["web-vitals", "npm:2.1.4"]\
         ],\
         "linkType": "SOFT"\
@@ -19874,6 +19887,15 @@ const RAW_RUNTIME_STATE =
           ["convert-source-map", "npm:1.9.0"],\
           ["source-map", "npm:0.7.4"],\
           ["v8-to-istanbul", "npm:8.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["validator", [\
+      ["npm:13.15.0", {\
+        "packageLocation": "../../Users/min/AppData/Local/Yarn/Berry/cache/validator-npm-13.15.0-b048a51909-10c0.zip/node_modules/validator/",\
+        "packageDependencies": [\
+          ["validator", "npm:13.15.0"]\
         ],\
         "linkType": "HARD"\
       }]\
