@@ -8,6 +8,7 @@ import globalStyles from './styles/globalStyles'
 
 import { AlertContextPrvider } from '@contexts/AlertContext'
 import { QueryClient, QueryClientProvider } from 'react-query'
+import AuthGuard from './components/auth/AuthGuard'
 
 const client = new QueryClient({
   defaultOptions: {},
@@ -19,7 +20,9 @@ root.render(
     <Global styles={globalStyles} />
     <QueryClientProvider client={client}>
       <AlertContextPrvider>
-        <App />
+        <AuthGuard>
+          <App />
+        </AuthGuard>
       </AlertContextPrvider>
     </QueryClientProvider>
   </React.StrictMode>,
