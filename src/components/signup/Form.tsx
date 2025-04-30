@@ -44,7 +44,7 @@ export default function Form({
       <TextField
         label="이메일"
         name="email"
-        placeholder="card@gmail.com"
+        placeholder="이메일을 입력해주세요"
         value={formValues.email}
         onChange={handleFormValues}
         hasError={Boolean(dirty.email) && Boolean(errors.email)}
@@ -77,7 +77,7 @@ export default function Form({
       <TextField
         label="이름"
         name="name"
-        placeholder="홍길동"
+        placeholder="이름을 입력해주세요"
         value={formValues.name}
         onChange={handleFormValues}
         hasError={Boolean(dirty.name) && Boolean(errors.name)}

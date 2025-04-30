@@ -33,6 +33,7 @@ export default function CardPage() {
         {benefit.map((text, index) => {
           return (
             <motion.li
+              key={text}
               initial={{
                 opacity: 0,
                 translateX: -90,

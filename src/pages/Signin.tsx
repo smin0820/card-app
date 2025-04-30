@@ -1,5 +1,9 @@
-import React from 'react'
+import Form from '@components/signin/Form'
 
 export default function SigninPage() {
-  return <div></div>
+  return (
+    <div>
+      <Form />
+    </div>
+  )
 }
