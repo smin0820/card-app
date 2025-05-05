@@ -39,6 +39,7 @@ const RAW_RUNTIME_STATE =
           ["@types/jest", "npm:27.5.2"],\
           ["@types/lodash", "npm:4.17.16"],\
           ["@types/node", "npm:16.18.126"],\
+          ["@types/qs", "npm:6.9.18"],\
           ["@types/react", "npm:19.0.12"],\
           ["@types/react-dom", "virtual:959a6f4d1e7f9d7c28ea0dc2a832f34fc4aaf7381fdbf5053a0f3f060b7409189f1b43fa830820bba280f2bb37ebb1f7121e62f66733496570163a3697d1b897#npm:19.0.4"],\
           ["@types/testing-library__jest-dom", "npm:6.0.0"],\
@@ -54,6 +55,7 @@ const RAW_RUNTIME_STATE =
           ["framer-motion", "virtual:959a6f4d1e7f9d7c28ea0dc2a832f34fc4aaf7381fdbf5053a0f3f060b7409189f1b43fa830820bba280f2bb37ebb1f7121e62f66733496570163a3697d1b897#npm:12.9.2"],\
           ["lodash", "npm:4.17.21"],\
           ["prettier", "npm:3.5.3"],\
+          ["qs", "npm:6.14.0"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:959a6f4d1e7f9d7c28ea0dc2a832f34fc4aaf7381fdbf5053a0f3f060b7409189f1b43fa830820bba280f2bb37ebb1f7121e62f66733496570163a3697d1b897#npm:18.2.0"],\
           ["react-infinite-scroll-component", "virtual:959a6f4d1e7f9d7c28ea0dc2a832f34fc4aaf7381fdbf5053a0f3f060b7409189f1b43fa830820bba280f2bb37ebb1f7121e62f66733496570163a3697d1b897#npm:6.1.0"],\
@@ -8401,6 +8403,7 @@ const RAW_RUNTIME_STATE =
           ["@types/jest", "npm:27.5.2"],\
           ["@types/lodash", "npm:4.17.16"],\
           ["@types/node", "npm:16.18.126"],\
+          ["@types/qs", "npm:6.9.18"],\
           ["@types/react", "npm:19.0.12"],\
           ["@types/react-dom", "virtual:959a6f4d1e7f9d7c28ea0dc2a832f34fc4aaf7381fdbf5053a0f3f060b7409189f1b43fa830820bba280f2bb37ebb1f7121e62f66733496570163a3697d1b897#npm:19.0.4"],\
           ["@types/testing-library__jest-dom", "npm:6.0.0"],\
@@ -8416,6 +8419,7 @@ const RAW_RUNTIME_STATE =
           ["framer-motion", "virtual:959a6f4d1e7f9d7c28ea0dc2a832f34fc4aaf7381fdbf5053a0f3f060b7409189f1b43fa830820bba280f2bb37ebb1f7121e62f66733496570163a3697d1b897#npm:12.9.2"],\
           ["lodash", "npm:4.17.21"],\
           ["prettier", "npm:3.5.3"],\
+          ["qs", "npm:6.14.0"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:959a6f4d1e7f9d7c28ea0dc2a832f34fc4aaf7381fdbf5053a0f3f060b7409189f1b43fa830820bba280f2bb37ebb1f7121e62f66733496570163a3697d1b897#npm:18.2.0"],\
           ["react-infinite-scroll-component", "virtual:959a6f4d1e7f9d7c28ea0dc2a832f34fc4aaf7381fdbf5053a0f3f060b7409189f1b43fa830820bba280f2bb37ebb1f7121e62f66733496570163a3697d1b897#npm:6.1.0"],\
@@ -17101,6 +17105,14 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../Users/min/AppData/Local/Yarn/Berry/cache/qs-npm-6.13.0-53676ddc84-10c0.zip/node_modules/qs/",\
         "packageDependencies": [\
           ["qs", "npm:6.13.0"],\
+          ["side-channel", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:6.14.0", {\
+        "packageLocation": "../../Users/min/AppData/Local/Yarn/Berry/cache/qs-npm-6.14.0-6b298311eb-10c0.zip/node_modules/qs/",\
+        "packageDependencies": [\
+          ["qs", "npm:6.14.0"],\
           ["side-channel", "npm:1.1.0"]\
         ],\
         "linkType": "HARD"\
