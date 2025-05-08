@@ -8,6 +8,7 @@ import { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import useAppliedCard from '@components/apply/hooks/useAppliedCard'
 import { useAlertContext } from '@/contexts/AlertContext'
+import FullPageLoader from '@/components/shared/FullPageLoader'
 
 export default function ApplyPage() {
   const navigate = useNavigate()
@@ -85,7 +86,7 @@ export default function ApplyPage() {
   }
 
   if (readyToPoll || 카드를신청중인가) {
-    return <div>Loading...</div>
+    return <FullPageLoader message="카드를 신청중입니다" />
   }
   return <Apply onSubmit={mutate} />
 }
