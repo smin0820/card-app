@@ -1,6 +1,8 @@
 import { css } from '@emotion/react'
 import React from 'react'
 import Flex from './Flex'
+import Skeleton from './Skeleton'
+import Spacing from './Spacing'
 import Text from './Text'
 
 interface ListRowProps {
@@ -46,13 +48,33 @@ function ListRowTexts({
   title,
   subTitle,
 }: {
-  title: string
-  subTitle: string
+  title: React.ReactNode
+  subTitle: React.ReactNode
 }) {
   return (
     <Flex direction="column">
       <Text bold={true}>{title}</Text>
       <Text typography="t7">{subTitle}</Text>
+    </Flex>
+  )
+}
+
+function ListRowSkeleton() {
+  return (
+    <Flex as="li" css={listRowContainerStyles} align="center">
+      <Flex css={listRowLeftStyles}></Flex>
+      <Flex css={listRowContentsStyles}>
+        <ListRow.Texts
+          title={
+            <>
+              <Skeleton width={115.84} height={25.49} />
+              <Spacing size={2} />
+            </>
+          }
+          subTitle={<Skeleton width={115.84} height={19.51} />}
+        />
+      </Flex>
+      <IconArrowRight />
     </Flex>
   )
 }
@@ -72,3 +94,4 @@ function IconArrowRight() {
 }
 
 ListRow.Texts = ListRowTexts
+ListRow.Skeleton = ListRowSkeleton
